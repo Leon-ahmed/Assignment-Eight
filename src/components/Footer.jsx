@@ -88,7 +88,7 @@ export default function Footer() {
 
               <a
                 href="#"
-                className="hover:text-sky-400 transition"
+                className="hover:text-sky-400"
               >
                 <FaTwitter />
               </a>
