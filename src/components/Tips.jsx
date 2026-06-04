@@ -7,7 +7,7 @@ const Tips = () => {
     return (
        <div className="bg-blue-50 w-full">
          <div className="flex flex-col md:flex-row w-11/12 mx-auto py-10 gap-15">
-            <div className="rounded-md "><Image src={lemon} alt='lemon' width={800} height={500} className="rounded-md "></Image></div>
+            <div className="rounded-md   "><Image src={lemon} alt='lemon' width={800} height={500} className="rounded-md "></Image></div>
 
             <div className="mt-8">
                 <h3 className="font-bold  text-3xl">Summer Care Tips</h3>
