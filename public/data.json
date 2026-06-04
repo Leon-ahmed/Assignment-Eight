@@ -6,11 +6,10 @@
     "price": 18,
     "rating": 4.6,
     "stock": 25,
-    "description": "Lightweight UV400 sunglasses designed for strong summer sun protection.",
+    "description": "Lightweight UV400 sunglasses designed to provide superior eye protection against harmful UVA and UVB rays while ensuring comfort and clear vision during long hours outdoors in strong summer sunlight.",
     "image": "/items/sg.jpg",
     "category": "Accessories"
   },
-
   {
     "id": 2,
     "name": "Stainless Steel Water Bottle",
@@ -18,7 +17,7 @@
     "price": 20,
     "rating": 4.7,
     "stock": 30,
-    "description": "Insulated bottle that keeps drinks cold for up to 24 hours.",
+    "description": "Premium insulated stainless steel water bottle engineered to keep beverages cold for up to 24 hours and hot for several hours, making it perfect for outdoor activities, travel, and daily hydration.",
     "image": "/items/water.jpg",
     "category": "Utility"
   },
@@ -29,7 +28,7 @@
     "price": 15,
     "rating": 4.5,
     "stock": 50,
-    "description": "Large quick-dry cotton towel for beach use.",
+    "description": "Large and soft quick-dry cotton beach towel designed for maximum comfort, excellent absorbency, and convenient use at the beach, poolside, picnics, or summer vacations.",
     "image": "/items/twl.jpg",
     "category": "Beach Essentials"
   },
@@ -40,18 +39,18 @@
     "price": 10,
     "rating": 4.3,
     "stock": 60,
-    "description": "Comfortable lightweight flip flops for summer.",
+    "description": "Comfortable and lightweight anti-slip flip flops featuring durable materials and cushioned soles, providing reliable grip and support for everyday summer wear both indoors and outdoors.",
     "image": "/items/flip.jpg",
     "category": "Footwear"
   },
-    {
+  {
     "id": 5,
     "name": "SPF 50 Sunscreen Lotion",
     "brand": "SunGuard",
     "price": 12,
     "rating": 4.8,
     "stock": 40,
-    "description": "Water-resistant sunscreen lotion for full-body protection during summer heat.",
+    "description": "Advanced SPF 50 water-resistant sunscreen lotion that offers broad-spectrum protection against harmful sun exposure, helping prevent sunburn, skin damage, and premature aging during hot summer days.",
     "image": "/items/sp.jpeg",
     "category": "Skincare"
   },
@@ -62,7 +61,7 @@
     "price": 14,
     "rating": 4.4,
     "stock": 35,
-    "description": "Breathable sun hat with UV protection.",
+    "description": "Breathable wide-brim sun hat crafted with lightweight materials and UV-blocking technology to provide excellent shade, comfort, and protection during outdoor summer activities.",
     "image": "/items/hat.jpg",
     "category": "Accessories"
   }

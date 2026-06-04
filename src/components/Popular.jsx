@@ -45,7 +45,7 @@ const Popular = async() => {
 
                          <p className="text-primary font-bold"><span>&#x0024;</span>{item.price}</p>
 
-                           <Link href={'/'}><button className="btn btn-neutral/50 mt-5   text-primary  w-full transition-all duration-300 hover:scale-105 hover:shadow-lg">View Details</button></Link>
+                           <Link href={`/products/${item.id}`}><button className="btn btn-neutral/50 mt-5   text-primary  w-full transition-all duration-300 hover:scale-105 hover:shadow-lg">View Details</button></Link>
 
 
 
