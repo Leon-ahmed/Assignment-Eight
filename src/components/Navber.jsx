@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../public/logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import Navlink from './Navlink';
 const Navber = () => {
     const user = null;
 
@@ -36,11 +36,11 @@ const Navber = () => {
             </div>
 
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 space-x-5">
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/products">Products</Link></li>
+                <ul className=" font-semibold  menu-horizontal px-1 space-x-5">
+                    <li><Navlink href="/">Home</Navlink></li>
+                    <li><Navlink href="/products">Products</Navlink></li>
                     {user && (
-                        <li><Link href="/profile">My Profile</Link></li>
+                        <li><Navlink href="/profile">My Profile</Navlink></li>
                     )}
                 </ul>
             </div>
