@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "RayLook",
+    "price": 18,
+    "rating": 4.6,
+    "stock": 25,
+    "description": "Lightweight UV400 sunglasses designed for strong summer sun protection.",
+    "image": "/public/items/sg.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "SPF 50 Sunscreen Lotion",
+    "brand": "SunGuard",
+    "price": 12,
+    "rating": 4.8,
+    "stock": 40,
+    "description": "Water-resistant sunscreen lotion for full-body protection during summer heat.",
+    "image": "/public/items/sp.jpeg",
+    "category": "Skincare"
+  },
+  {
+    "id": 3,
+    "name": "Stainless Steel Water Bottle",
+    "brand": "HydraFlow",
+    "price": 20,
+    "rating": 4.7,
+    "stock": 30,
+    "description": "Insulated bottle that keeps drinks cold for up to 24 hours.",
+    "image": "/public/items/water.jpg",
+    "category": "Utility"
+  },
+  {
+    "id": 4,
+    "name": "Beach Cotton Towel",
+    "brand": "OceanWeave",
+    "price": 15,
+    "rating": 4.5,
+    "stock": 50,
+    "description": "Large quick-dry cotton towel for beach use.",
+    "image": "/public/items/twl.jpg",
+    "category": "Beach Essentials"
+  },
+  {
+    "id": 5,
+    "name": "Anti-Slip Flip Flops",
+    "brand": "StepEase",
+    "price": 10,
+    "rating": 4.3,
+    "stock": 60,
+    "description": "Comfortable lightweight flip flops for summer.",
+    "image": "/public/items/flip.jpg",
+    "category": "Footwear"
+  },
+  {
+    "id": 6,
+    "name": "Wide Brim Sun Hat",
+    "brand": "ShadeMax",
+    "price": 14,
+    "rating": 4.4,
+    "stock": 35,
+    "description": "Breathable sun hat with UV protection.",
+    "image": "/public/items/hat.jpg",
+    "category": "Accessories"
+  }
+]
