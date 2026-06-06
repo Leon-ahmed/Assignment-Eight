@@ -1,6 +1,33 @@
 import Link from 'next/link';
 import products from '../../../../../public/data.json';
 import Image from 'next/image';
+
+
+
+export const generateMetadata=async({params})=>{
+ const {id}= await params;
+     const data=products.find(
+        (item)=> item.id===Number(id))
+
+return {title:data.name,
+       description:data.description,
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 const Singleproduct = async({params}) => {
     const {id}= await params;
      const data=products.find(

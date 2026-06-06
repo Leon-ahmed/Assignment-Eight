@@ -3,6 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaRegStar } from "react-icons/fa";
 
+export const metadata={
+    title:'SunCart-Products',
+    description:'All Products',
+}
+
+
+
 const Products = () => {
     return (
      <div className="bg-gray-50">
