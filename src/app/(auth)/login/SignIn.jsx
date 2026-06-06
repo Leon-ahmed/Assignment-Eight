@@ -13,6 +13,8 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { BsGoogle } from "react-icons/bs";
+ 
 
 
  
@@ -44,6 +46,14 @@ export default function SignInPage() {
    router.push("/");
 };
 
+ const signIn = async () => {
+   await authClient.signIn.social({
+    provider: "google",
+      callbackURL: "/?login=success",
+  });
+};
+
+ 
 
 
 
@@ -111,6 +121,12 @@ export default function SignInPage() {
             Reset
           </Button>
         </div>
+          <div className=" flex items-center gap-2 pt-5">
+            <hr className="flex-1 border-t-2 border  border-gray-200/80" />
+            <p className=" font-semibold text-gray-600">Or</p>
+            <hr className="flex-1 border-t-2 border  border-gray-200/80" />
+          </div>
+        <Button type="button" className={'w-full'} onClick={signIn}><BsGoogle></BsGoogle>  Sign in with google</Button>
       </Form>
     </Card>
     </div>

@@ -36,7 +36,7 @@ export default function SignUpPage() {
 
      if(!error){
         sessionStorage.setItem("loginSuccess", "true");
-        router.push("/");
+        router.push("/login");
      }
 
 

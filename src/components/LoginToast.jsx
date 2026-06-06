@@ -1,17 +1,45 @@
 "use client";
 
 import { useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 export default function LoginToast() {
-  useEffect(() => {
-    const success = sessionStorage.getItem("loginSuccess");
+  const searchParams = useSearchParams();
+  const router = useRouter();
 
-    if (success) {
-      toast.success("Login successful!");
+  useEffect(() => {
+   
+    const loginSuccess = sessionStorage.getItem("loginSuccess");
+
+    if (loginSuccess) {
+      toast.success("Login successful!", {
+        position: "bottom-center",
+      });
+
       sessionStorage.removeItem("loginSuccess");
     }
-  }, []);
+
+    
+    const signupSuccess = sessionStorage.getItem("signupSuccess");
+
+    if (signupSuccess) {
+      toast.success("Account created successfully!", {
+        position: "bottom-center",
+      });
+
+      sessionStorage.removeItem("signupSuccess");
+    }
+
+    
+    if (searchParams.get("googleLogin") === "true") {
+      toast.success("Google login successful!", {
+        position: "bottom-center",
+      });
+
+      router.replace("/");
+    }
+  }, [searchParams, router]);
 
   return null;
 }
