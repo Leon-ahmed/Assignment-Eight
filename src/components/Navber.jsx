@@ -4,11 +4,13 @@ import React, { useEffect, useState } from "react";
 import logo from "../../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Navlink from "./Navlink";
 import { authClient } from "@/lib/auth-client";
 import {Avatar} from "@heroui/react";
 const Navber = () => {
   const [user, setUser] = useState(null);
+  const router = useRouter();
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -18,6 +20,13 @@ const Navber = () => {
 
     fetchUser();
   }, []);
+
+  const handleLogout = async () => {
+    await authClient.signOut();
+    setUser(null);
+    router.replace("/login");
+    router.refresh();
+  };
 
   return (
     <div className="navbar bg-base-100 shadow-sm sticky top-0 z-50">
@@ -68,17 +77,13 @@ const Navber = () => {
           
              </Avatar>
 
-           <Link href={'/login'}>
             <button
+              type="button"
               className="btn btn-error btn-sm"
-              onClick={async () => {
-                await authClient.signOut();
-                setUser(null);
-              }}
+              onClick={handleLogout}
             >
               Logout
             </button>
-           </Link>
           </>
         ) : (
           <>
