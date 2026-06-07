@@ -1,3 +1,8 @@
 import { createAuthClient } from "better-auth/react";
 
-export const authClient = createAuthClient();
+export const authClient = createAuthClient(
+    {baseURL:"https://assignment-eight-one.vercel.app/"
+
+        
+    }
+);
