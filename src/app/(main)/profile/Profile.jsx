@@ -34,7 +34,7 @@ export default function ProfilePage() {
   return (
   <div className="bg-linear-to-r from-slate-900 via-purple-900 to-slate-900 pt-10 pb-10">
 
-  <div className="p-10  flex flex-col w-8/12 lg:w-2/12   rounded-md   bg-white/10 backdrop-blur-lg border border-white/20 text-white rounded-t-md  mx-auto   items-center    ">
+  <div className="p-10  flex flex-col w-8/12     rounded-md   bg-white/10 backdrop-blur-lg border border-white/20 text-white rounded-t-md  mx-auto   items-center    ">
       <h1 className="text-2xl text-center font-bold mb-5">My Profile</h1>
 
       <div className="space-y-3    ">
