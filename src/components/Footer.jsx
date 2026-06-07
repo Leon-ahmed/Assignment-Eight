@@ -45,14 +45,7 @@ export default function Footer() {
                 </Link>
               </li>
 
-              <li>
-                <Link
-                  href="/my-profile"
-                  className="hover:text-orange-400"
-                >
-                  My Profile
-                </Link>
-              </li>
+            
             </ul>
           </div>
 

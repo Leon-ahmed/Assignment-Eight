@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import {
   Button,
   Card,
@@ -121,6 +122,14 @@ export default function SignInPage() {
             Reset
           </Button>
         </div>
+          
+                  <p className="font-medium">
+  Don&apos;t have an account?{" "}
+  <Link href="/register" className="text-blue-500">
+    Sign Up
+  </Link>
+</p>
+
           <div className=" flex items-center gap-2 pt-5">
             <hr className="flex-1 border-t-2 border  border-gray-200/80" />
             <p className=" font-semibold text-gray-600">Or</p>

@@ -12,6 +12,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 
@@ -104,6 +105,13 @@ export default function SignUpPage() {
           <FieldError />
         </TextField>
 
+        <p className="font-medium">
+  Have an account?{" "}
+  <Link href="/login" className="text-blue-500">
+  Log in now
+  </Link>
+</p>
+ 
         <div className="flex gap-2">
           <Button type="submit">
             <Check />
